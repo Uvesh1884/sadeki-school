@@ -515,8 +515,8 @@ header {
 }
 @media screen and (max-width:500px) {
   .nav_menu {
-    top: 5rem;
-    right: 37%;
+    top: 7rem;
+    right: 15%;
   }
   .container{
     flex-wrap: wrap;
