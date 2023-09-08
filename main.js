@@ -19,3 +19,21 @@ faqs.forEach(Element => {
     })
     
 });
+
+//------------- menubar----------
+
+const menu = document.querySelector('.nav_menu');
+const openBtn = document.querySelector('#open-menu-btn');
+const closeBtn = document.querySelector('#close-menu-btn');
+
+openBtn.addEventListener('click',()=>{
+    menu.style.display = "block";
+    openBtn.style.display = "none";
+    closeBtn.style.display = "inline-block"
+});
+
+closeBtn.addEventListener('click',()=>{
+    menu.style.display = "none";
+    openBtn.style.display = "inline-block";
+    closeBtn.style.display = "none";
+});
