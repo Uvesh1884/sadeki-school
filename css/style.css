@@ -131,7 +131,6 @@ nav button {
   color: #f75842;
 }
 .nav_container .nav_menu li a:hover {
-  color: var();
   cursor: pointer;
 }
 .navbar_scroll {
@@ -190,8 +189,10 @@ header {
   transition: var(--transition);
 }
 .category:hover {
-  box-shadow: 3rem 3rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
   z-index: 1;
+  background: transparent;
+  cursor: pointer;
 }
 .category:nth-child(2) .category-icon {
   background: var(--color-danger);
@@ -219,7 +220,7 @@ header {
 
 /*------------------------------ our courses---------------------------- */
 #courses {
-  margin-top: 15rem;
+  margin-top: 12rem;
   background: var(--color-bg1);
   border-radius: 2rem;
 }
@@ -244,7 +245,7 @@ header {
   background: transparent;
 }
 .course-info:hover {
-  box-shadow: 3rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
   background: transparent;
 }
 

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Sdeki School-Gondal</title>
+    <!-- ------------- -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- ------------- -->
+    <!------ About-css--------- -->
+    <link rel="stylesheet" href="./css/contact.css" />
+    <!-- -------iconscout -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- -------------- -->
+
+    <!-- ------------ -->
+  </head>
+  <body>
+    <nav>
+      <div class="container nav_container">
+        <a href="index.html"><h4 id="logo"><span>Sadeki</span> School.</h4></a>
+        <ul class="nav_menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="course.html">Courses</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Countact Us</a></li>
+        </ul>
+        <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
+        <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </nav>
+
+    <section id="contact">
+      <div class="container contact-container">
+        <div class="left-container">
+            <span id="element"></span>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti necessitatibus suscipit atque aperiam quam dicta accusamus, maxime ipsam sint praesentium.</p>
+            <div class="social-link">
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="right-contact">
+          <div class="contact-form">
+            <form>
+              <div class="data">
+                <input
+                  type="text"
+                  placeholder="Enter First Name"
+                  name="First Name"
+                  required
+                />
+                <input
+                  type="text"
+                  placeholder="Enter Last Name"
+                  name="Last Name"
+                  required
+                />
+              </div>
+              <input type="email" placeholder="Enter email id" required />
+              <label for="messageArea">Type Your message :</label>
+             <textarea name="message" id="messageArea" cols="7" rows="10" placeholder="Enter your message"></textarea>
+            </form>
+            <a class="btn-primary btn">Send message</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container footer-container">
+        <div id="footer-box-1" class="flex-boxes">
+          <a href="index.html"
+            ><h5 id="logo"><span>Sadeki</span> School.</h5></a
+          >
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga et
+            dolorum nostrum, eveniet in veniam dignissimos eaque ipsa ab
+            voluptatum!
+          </p>
+        </div>
+        <div id="footer-box-2" class="flex-boxes">
+          <h5>permalink</h5>
+          <div class="links">
+            <a href="" id="link" class="jump">Home</a>
+            <a href="" id="link" class="jump">Courses</a>
+            <a href="" id="link" class="jump">About</a>
+            <a href="" id="link" class="jump">Contact Us</a>
+          </div>
+        </div>
+        <div id="footer-box-3" class="flex-boxes">
+          <h5>Primacy</h5>
+          <div class="praimacy-list">
+            <ul>
+              <li><a href="#">Praivacy policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Refund policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="footer-box-4" class="flex-boxes">
+          <h5>Contact Us</h5>
+          <div class="contact-info">
+            <div class="details">
+              <small>(+91)-7016114024</small>
+              <small>email: usadeki@gmail.com</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <small>copyright &copy; sadekischool.in</small>
+      </div>
+    </footer>
+    <script src="./main.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Contact Us for More details'],
+          typeSpeed: 80,
+        });
+      </script>
+  </body>
+</html>

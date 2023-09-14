@@ -1,0 +1,139 @@
+#team{
+    margin-top: 0;
+    padding: 0;
+    padding-bottom: 2rem;
+}
+.about_container{
+    display: flex;
+    margin-top: 1.5rem;
+}
+.left_about{
+    flex-basis: 50%;
+    padding: 3rem;
+}
+.right_about{
+    flex-basis: 50%;
+}
+.right_about p{
+    margin: 1.5rem 0px;
+
+}
+footer{
+    margin-top: 5rem;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+.achive-cards{
+    background: var(--color-bg1);
+    padding: 1.6rem;
+    border-radius: 1rem;
+    align-items: center;
+    text-align: center;
+    transition: var(--transition);
+}
+.achive-cards:hover{
+    background: transparent;
+    cursor: pointer;
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+.achive-cards i{
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.achive-cards:nth-child(2) .icons{
+    background: red;
+}
+.achive-cards:nth-child(1) .icons{
+    background: #f7c94b;
+}
+.achive-cards:nth-child(3) .icons{
+    background: blue;
+}
+
+/* -----------Team--------- */
+
+.mumber-img img{
+    width: 10rem;
+    margin: auto;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    
+}
+.team-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+.team-info{
+    background: var(--color-bg2);
+    height: 20rem;
+    border-radius: 1rem;
+    transition: all 400ms ease;
+    position: relative;
+    overflow: hidden;
+}
+.team-info:hover{
+   cursor: pointer;
+   background: var(--color-bg1);
+}
+.team-info h4{
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+.team-info small{
+    color: rgb(167, 165, 165);
+}
+.mumber-social{
+    position:absolute;
+    right: -100%;
+    display: flex;
+    top: 50%;
+    flex-direction: column;
+    background: var(--color-primary);
+    border-radius: 1rem 0 0 1rem;
+    width: 2.5rem;
+    height: 10rem;
+    justify-content: center;
+    transform: translateY(-50%);
+    transition: all 400ms ease-in;
+}
+.team-info:hover .mumber-social{
+    right: 0;
+}
+.mumber-social a{
+    font-size: 1.3rem;
+}
+.mumber-img img{
+    filter: saturate(0);
+}
+.team-info:hover img{
+    filter: saturate(1);
+}
+
+/* ------media-query----- */
+
+@media screen and (max-width:414px) {
+    .left_about{
+        display: none;
+    }
+    .right_about{
+        flex-basis: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .cards{
+        grid-template-columns:repeat(1,1fr);
+    }
+    .team-container{
+        grid-template-columns: 1fr;
+    }
+}
